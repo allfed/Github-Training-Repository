@@ -16,3 +16,8 @@ def add_numbers(a = 7,  b = 8):
         return sum
     return add_numbers_inner(a, b)
 
+if __name__ == '__main__':
+    assert add_numbers(4, 8) == 12
+    assert add_numbers(4.3, 9.2) == 13.5
+    assert add_numbers(-2, -3) == -5
+    print("Tests passed")
