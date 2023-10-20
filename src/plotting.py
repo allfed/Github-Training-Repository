@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 plt.style.use(
     "https://raw.githubusercontent.com/allfed/ALLFED-matplotlib-style-sheet/main/ALLFED.mplstyle"
-    )
+)
+
 
 def create_scatter_plot(x_data, y_data, title="", xlabel="", ylabel=""):
     """

@@ -1,6 +1,7 @@
 """Module providing a function that calculate the area of a circle."""
 import math
 
+
 def calculate_circle_area(radius):
     """
     Calculates the area of a circle from its radius.
