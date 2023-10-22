@@ -1,102 +1,42 @@
-# ALLFED-Repository-Template
-Use this as template when you start a new project by clicking "Use this template" in the top right.
+# Github-Training-Repository
+This repository is meant to be used to train new hires/volunteers on how to use Github. Reading the material and finishing the exercise should take around 6-8 hours.
 
+Before you get started, please check that your actual name is visible on your Github profile. This way we know which account belongs to whom and when we make repositories citable your real name will be used and not your nickname. 
 
-## ALLFED Python Style Guide
-All code written for ALLFED should follow the [PEP 8 Style Guide for Python](https://peps.python.org/pep-0008/). Especially important are:
-* Keep the code well documented
-* Every function needs a docstring in this form:
-```
-def count_line(f, line):
-    """
-    Counts the number of times a line occurs. Case-sensitive.
+# Preparation Material
+Please look at all those materials before you start the exercise.
 
-    Arguments:
-        f (file): the file to scan
-        line (str): the line to count
+* [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510): This gives a good overview of why we need to adhere to good coding practices and what the general idea is
+* [Good Research Code Handbook](https://goodresearch.dev/): Explanation of how to implement good coding practices in Python
+* [Fundamentals of Git and Github](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+* [How to use Github with Github Desktop](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+* [Getting started with anaconda and conda](https://youtu.be/YJC6ldI3hWk)
+* [ALLFED Repository Template Readme](https://github.com/allfed/ALLFED-Repository-Template)
+* [Overview of Python](https://www.youtube.com/watch?v=kqtD5dpn9C8)
+* [Automated Testing](https://blog.deepjyoti30.dev/tests-github-python)
+* The [OpenAI Chat Bot](https://chat.openai.com/chat) is pretty good at answering programming questions
+* It is recommended to use [VS Code](https://www.youtube.com/watch?v=B-s71n0dHUk) as your code editor
+* The [Seaweed Growth Model Repository](https://github.com/allfed/Seaweed-Growth-Model) can be seen as an example of how ALLFED repositories should look like. You can check how things are done there, if something here confuses you
 
-    Returns:
-        int: the number of times the line occurs.
-    """
-```
-* Write [decoupled code](https://goodresearch.dev/decoupled.html), e.g. Functions should do exactly one thing and be as short as possible
-* Naming conventions:
-  - Snake case for variables and module: variable_name, my_module.py
-  - Camel case for class name: MyClass
-  - Camel case with spaces for jupyter notebook: Analyze Brain Data.ipynb
-* Delete dead code! Don't outcomment code you don't use anymore, but delete it instead. If you need to find it again, that's what we have git for. 
-* Use Jupyter Notebooks only for explanations and visualization. The actual programming should be happening in `.py` files. 
-* This repository is automatically set up with Github Actions/[Lint Action](https://github.com/marketplace/actions/lint-action) that will format your code using black and check for problems with flake8 ([without E203, W503](https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated)). If either of them fails, you will not be able to merge your files unless you fix it. If this creates problem you cannot solve contact: florian@allfed.info
-* You can deactivate the branch protection that makes sure that only correct and styled code can be merged, but it is not recommended. 
+# Exercise
+1. Fork this repository
+2. Clone it to your local computer
+3. Recreate the folder structure as described in the [ALLFED Guidelines](https://github.com/allfed/ALLFED-Repository-Template)
+4. Create a local virtual environment for the repository
+    * When you try to install/change things make sure are [activating it first!](https://goodresearch.dev/setup.html?highlight=activate#conda). If something related to virtual environments isn't working, always make sure that it is really activated. 
+5. Create two files in the src folder: numerical.py and plotting.py
+6. Write a function in numerical.py that takes at least one argument and returns a numerical value
+7. Write a function in plotting.py that creates a scatter plot and uses the [ALLFED Style Sheet](https://github.com/allfed/ALLFED-matplotlib-style-sheet)
+8. Make your repository an installable package as described in [Good Research Code Handbook](https://goodresearch.dev/setup.html)
+9. Add a Jupyter Notebook in your scripts folder and import numerical.py and call it
+11. Write two test for numerical.py
+12. Make sure that the documenation of all code follows the [ALLFED Guidelines](https://github.com/allfed/ALLFED-Repository-Template#allfed-python-style-guide)
+    * If you set-up automated documentation, you can see the status in the [pages setting](https://github.com/allfed/Seaweed-Growth-Model/settings/pages)
+14. Automate the tests, so they run on every commit (you can just copy the files needed for that from [the template](https://github.com/allfed/ALLFED-Repository-Template)
+    * The files used for testing in Github Actions are hidden files. You might need to change the settings of your operation system to show you the hidden files. 
+    * you can play around with pytest in your terminal in VS Code
+15. Create an environment.yml that specifies how your virtual environment can be recreated and save it in the repository
+16. Send back a pull request
+17. Check back in with Morgan or Florian if you have any questions (florian@allfed.info or morgan@allfed.info) 
 
-
-To make this easier you can use linter (auto-formatter) that change your code to be formatted in PEP 8 when you safe it. E.g. [here for Spyder](https://stackoverflow.com/questions/51463223/how-to-use-pep8-module-using-spyder) or [VS Code](https://code.visualstudio.com/docs/python/linting). 
-
-## Testing
-We want to create reliable code. This means, as much of the code needs to be automatically tested, to make sure that everything runs as intended. Therefore, every possible function should have some kind of `assert` that tests if it works. We use pytest [pytest](https://docs.pytest.org/en/7.1.x/) as our main test suit. All tests that you put in the tests folder in here are automatically run every time you push code. You can read more about testing [here](https://goodresearch.dev/testing.html). To adapt the testing.yml to your repository you just have to adapt the requirements in requirements.txt. Everything else should work on its own. You can find an example of how a test file should look like in the tests folder. Once you go the testing set up, also make sure to add the testing badge to the readme of your repository. Simply change the URL to your repository in this badge:
-
-![Testing](https://github.com/allfed/allfed-repository-template/actions/workflows/testing.yml/badge.svg)
-
-
-## Documenting in small projects
-Documenting your code is only one part of the documentation we want to create. Every larger repository needs:
-* a readme file that explains what the repository is for and how it is organized, which should contain:
-    - A one-sentence description of your project
-    - A longer description of your project
-    - Installation instructions
-    - General orientation to the codebase and usage instructions
-    - Links to papers
-    - Links to extended docs
-    - License
-
-* a tutorial Jupyter Notebook to explain how the repository is supposed to be used
-
-
-## Documenting in big projects
-All the things for the small projects, but also:
-* An automated documentation via Gitub Actions. This is already set up in this repository. Is uses the code from [this post](https://towardsdatascience.com/easily-automate-and-never-touch-your-documentation-again-a98c91ce1b95) and combines it with [this one](https://blog.elmah.io/deploying-a-mkdocs-documentation-site-with-github-actions/). It also is setup that it will only look for python files in the src folder. So, make sure that everything is in there (you can changes this behavior in the main function of `automate_mkdocs.py`). To get it running do the following
-    * go to Settings --> Pages 
-    * select deploy from a branch as source
-    * select gh-pages as branch at root (for this option to pop up the `docs.yml` file has to have run succesfully at least once)
-    * The end result will look something [like this](https://florianjehn.github.io/Seaweed-Growth-Model/)
-    * The automated documentation part is still a bit wip, if you run into problems contact florian@allfed.info
-* Create a [visual representation](https://goodresearch.dev/_images/pcbi.1007358.g002.PNG_L.png) of how the different files interact with each other
-
-## Making the repository citable
-All ALLFED repositories should be citable by release. For this we use [Zenodo](https://zenodo.org/). This has to be activated by an Admin (so either Florian or Morgan). Once you have a manuscript where you need to cite the repository let them know and they will activate it. This will also create a doi badge, which should be included in the readme, like this:
-
----
-
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6865646.svg)](https://doi.org/10.5281/zenodo.6865646)
-
-
----
-   
-## Project Skeleton
-This repository already has the folder structure we use for repositories. Every folder has an additional readme, to tell you what needs to go in there. 
-
-## Making the repository a pip installable Python package
-For some repositories it makes sense to make them installable via pip (e.g. a model we want to share easily). In this case you can use the explanation [here](https://goodresearch.dev/setup.html). This repository already contains a setup.py that can be used for that. 
-
-## Environment
-Every ALLFED project is run in its own virtual environment. Therefore, every project needs an `environment.yml` file. The one in this repository is only an example and should not be used for any actual project. To create and organize virtual environments we use [conda](https://docs.conda.io/en/latest/miniconda.html). 
-
-## Requirements
-Every ALLFED project needs a requirements file that specifies what packages are needed to run the project. You can find an example file in the repository. If you use a lot of packages you can use [pipreqg](https://allfed.github.io/Seaweed-Growth-Model/) to find them all.  
-
-## License
-ALLFED publishes its code in Open Access. For this we use the [**Apache 2.0 License**](https://www.planetcrust.com/what-does-apache-2-0-license-mean). This license allows very free use of the code, but makes sure that ALLFED cannot be sued if something goes wrong with the code. The license template in this repository needs to be adapted when a new project is created. You can include the following license badge in your readme:
-
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-## Gitignore
-The [.gitignore file](https://git-scm.com/docs/gitignore) is the default one for Python. Make sure you change it when using another programming language. 
-
-## Further reading/Misc
-* [Best Practices for Scientific Computing](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)
-* [General course to get to know the Python skills needed to the work at ALLFED](https://github.com/florianjehn/python-for-environmental-science)
-* We are using [Github Copilot](https://github.com/features/copilot) to write faster and cleaner code. If you would also like to have a license contact finance@allfed.info
-
-## Acknowledgment
-This is strongly based on the ["Good Research Code Handbook"](https://goodresearch.dev/index.html). If something here confuses you, it makes sense to read about it there. Pretty good explanations. 
+If you get stuck at any point please reach out to one of the data scientists (either florian@allfed.info or morgan@allfed.info). 

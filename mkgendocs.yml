@@ -9,3 +9,8 @@ copyright: ALLFED
 
 #This specifies the autogeneration portion
 pages:
+  - page: "modules/src/numerical.md"
+    source: "src/numerical.py"
+    functions:
+      - fibonacci_sum
+
