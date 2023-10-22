@@ -1,4 +1,4 @@
-import src.numerical
+from src.numerical import fibonacci_sum
 
 def test_fibonacci_sum():
     assert fibonacci_sum(0) == 0
@@ -9,4 +9,3 @@ def test_fibonacci_sum():
 def test_fibonacci_sum_more():
     assert fibonacci_sum(5) == 12
     assert fibonacci_sum(10) == 143
-
