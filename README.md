@@ -19,6 +19,7 @@ Please look at all those materials before you start the exercise.
 * [ChatGPT](https://chat.openai.com/chat) is pretty good at answering programming questions
 * It is recommended to use [VS Code](https://www.youtube.com/watch?v=B-s71n0dHUk) as your code editor
 * The [Seaweed Growth Model Repository](https://github.com/allfed/Seaweed-Growth-Model) can be seen as an example of how ALLFED repositories should look like. You can check how things are done there, if something here confuses you
+* General info: If a repository in the ALLFED group is private, there is a high chance it is not in use anymore. Please check in with the owner before trying to run it. 
 
 # Exercise
 1. Fork this repository
