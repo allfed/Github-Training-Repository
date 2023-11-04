@@ -3,7 +3,8 @@ This repository is meant to be used to train new hires/volunteers on how to use 
 
 Before you get started, please check that your actual name is visible on your Github profile. This way we know which account belongs to whom and when we make repositories citable your real name will be used and not your nickname. 
 
-Also, if you read this and you are not yet part of the ALLFED group on Github, please let Florian know your account name, so it can be added. 
+Also, if you read this and you are not yet part of the ALLFED group on Github, please let Florian know your account name, so it can be added. General info: If a repository in the ALLFED group is private, there is a high chance it is not in use anymore. Please check in with the owner before trying to run it. 
+
 
 # Preparation Material
 Please look at all those materials before you start the exercise.
@@ -19,7 +20,6 @@ Please look at all those materials before you start the exercise.
 * [ChatGPT](https://chat.openai.com/chat) is pretty good at answering programming questions
 * It is recommended to use [VS Code](https://www.youtube.com/watch?v=B-s71n0dHUk) as your code editor
 * The [Seaweed Growth Model Repository](https://github.com/allfed/Seaweed-Growth-Model) can be seen as an example of how ALLFED repositories should look like. You can check how things are done there, if something here confuses you
-* General info: If a repository in the ALLFED group is private, there is a high chance it is not in use anymore. Please check in with the owner before trying to run it. 
 
 # Exercise
 1. Fork this repository
