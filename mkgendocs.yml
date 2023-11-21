@@ -1,0 +1,21 @@
+site_name: My Super Cool Respository
+
+
+# Repository
+repo_name: My Super Cool Respository
+repo: https://github.com/allfed/My-Super-Cool-Respository
+# Copyright
+copyright: ALLFED
+
+#This specifies the autogeneration portion
+pages:
+  - page: "modules/src/numerical.md"
+    source: "src/numerical.py"
+    functions:
+      - bumpy_reduction
+
+  - page: "modules/src/plotting.md"
+    source: "src/plotting.py"
+    functions:
+      - plot_data
+
