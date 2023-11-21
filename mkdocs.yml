@@ -1,0 +1,28 @@
+site_name: Github Training Repository
+
+
+# Repository
+repo_name: Github Training Repository
+repo_url: https://github.com/mullach/Github-Training-Repository
+edit_uri: ""
+# Copyright
+copyright: ALLFED
+
+docs_dir: "docs/sources"
+
+plugins:
+  - search
+
+theme:
+  name: 'readthedocs'
+  custom_dir: 'docs'
+  palette:
+    primary: 'white'
+  logo: 'assets/images/logo_full.svg'
+  favicon: 'assets/images/favicon.svg'
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - instant
+nav:
+

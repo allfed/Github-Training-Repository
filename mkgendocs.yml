@@ -1,0 +1,21 @@
+site_name: Github-Training-Repository
+
+
+# Repository
+repo_name: Github-Training-Repository
+repo: https://github.com/mullach/Github-Training-Repository
+# Copyright
+copyright: ALLFED
+
+#This specifies the autogeneration portion
+pages:
+  - page: "modules/src/numerical.md"
+    source: "src/numerical.py"
+    functions:
+      - multiply
+
+  - page: "modules/src/plotting.md"
+    source: "src/plotting.py"
+    functions:
+      - scatterplot
+

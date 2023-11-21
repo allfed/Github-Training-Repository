@@ -1,10 +1,9 @@
 # Github-Training-Repository
-This repository is meant to be used to train new hires/volunteers on how to use Github. Reading the material and finishing the exercise should take around 6-8 hours. This all assumes that you are using Linux. If you are using Windows/Mac you will likely have to do additional steps to get things going. 
+This repository is meant to be used to train new hires/volunteers on how to use Github. Reading the material and finishing the exercise should take around 6-8 hours.
 
 Before you get started, please check that your actual name is visible on your Github profile. This way we know which account belongs to whom and when we make repositories citable your real name will be used and not your nickname. 
 
-Also, if you read this and you are not yet part of the ALLFED group on Github, please let Florian know your account name, so it can be added. General info: If a repository in the ALLFED group is private, there is a high chance it is not in use anymore. Please check in with the owner before trying to run it. 
-
+Also, if you read this and you are not yet part of the ALLFED group on Github, please let Florian know your account name, so it can be added. 
 
 # Preparation Material
 Please look at all those materials before you start the exercise.
@@ -18,7 +17,7 @@ Please look at all those materials before you start the exercise.
 * [Overview of Python](https://www.youtube.com/watch?v=kqtD5dpn9C8)
 * [Automated Testing](https://blog.deepjyoti30.dev/tests-github-python)
 * [ChatGPT](https://chat.openai.com/chat) is pretty good at answering programming questions
-* [Data Visualization Crimes](https://github.com/cxli233/FriendsDontLetFriends): please avoid those common mistakes when making plots
+* It is recommended to use [VS Code](https://www.youtube.com/watch?v=B-s71n0dHUk) as your code editor
 * The [Seaweed Growth Model Repository](https://github.com/allfed/Seaweed-Growth-Model) can be seen as an example of how ALLFED repositories should look like. You can check how things are done there, if something here confuses you
 
 # Exercise

@@ -1,0 +1,7 @@
+name: slimenv
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
